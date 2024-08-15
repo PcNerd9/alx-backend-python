@@ -3,10 +3,10 @@
 """
 contains a function that returns a list of tuple
 """
-from typing import List, Iterator, Sequence, Tuple
+from typing import List, Iterable, Sequence, Tuple
 
 
-def element_length(lst: Iterator[Sequence]) -> List[Tuple[Sequence, int]]:
+def element_length(lst: Iterable[Sequence]) -> List[Tuple[Sequence, int]]:
     """
     return a list of a tuple
     """
