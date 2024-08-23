@@ -20,4 +20,3 @@ async def task_wait_n(n: int, max_delay: int) -> List[float]:
         wait = await task
         bisect.insort(delay, wait)
     return delay
-
