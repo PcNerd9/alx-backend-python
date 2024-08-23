@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
 
-measure_time = __import__('2-measure_runtime').measure_time
+import asyncio
 
+task_wait_random = __import__('3-tasks').task_wait_random
 
-n = 5
-max_delay = 9
+async def test(max_delay: int) -> float:
+    task = task_wait_random(max_delay)
+    await task
+    print(task.__class__)
 
-print(measure_time(n, max_delay))
-
+asyncio.run(test(5))
