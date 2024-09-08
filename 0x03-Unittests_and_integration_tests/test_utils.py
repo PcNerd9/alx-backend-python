@@ -11,7 +11,7 @@ from utils import access_nested_map, get_json, memoize
 from typing import Mapping, Sequence, Any
 
 
-class TestAccesNestedMap(unittest.TestCase):
+class TestAccessNestedMap(unittest.TestCase):
     """
     Test the access_nested_map function
     """
