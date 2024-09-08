@@ -22,10 +22,7 @@ class TestAccesNestedMap(unittest.TestCase):
         ])
     def test_access_nested_map(self, nested_map: Mapping,
                                path: Sequence, output: Any) -> None:
-        """
-        Tested if the access_nested_map produces the correct
-        output
-        """
+        """Tested if the access_nested_map produces the correct output"""
         self.assertEqual(access_nested_map(nested_map, path), output)
 
     @parameterized.expand([
