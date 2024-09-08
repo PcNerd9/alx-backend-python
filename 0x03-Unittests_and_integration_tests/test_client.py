@@ -136,7 +136,7 @@ class TestIntegrationGithubOrgClient(unittest.TestCase):
         github = GithubOrgClient("google")
         self.assertEqual(github.public_repos(), self.expected_repos)
 
-    def test_public_repos_with_input(self) -> None:
+    def test_public_repos_with_license(self) -> None:
         """
         test if the public_repos method of the
         GithubOrgClient give the expected output with input
